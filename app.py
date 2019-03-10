@@ -159,7 +159,8 @@ def webhook():
             print("verificado")
             return request.args.get('hub.challenge')
         return render_template("home.html")
-    return "Nada retornado"
+    #return "Nada retornado"
+    return render_template("home.html")
 
 if __name__ == '__main__':
     app.run(debug = True)
